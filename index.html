@@ -9,12 +9,10 @@ body {
 }
 h1 {
 	margin: 0px;
-	text-align: center;
 }
 h1 + p {
 	font-style: italic;
 	margin: 0px;
-	text-align: center;
 }
 iframe {
 	outline: 1px solid black;
@@ -48,13 +46,18 @@ button {
 input, button {
 	float: left;
 }
+.clear {
+	clear: both;
+}
 	</style>
 </head>
 <body>
 <h1>Previewport</h1>
 <p>It&rsquo;s like having a little desktop in your pocket.</p>
+<p class="clear">For more info, <a href="https://github.com/kimslawson/previewport/tree/master">see readme here</a>.
 <form action=""><input id="url" name="url" type="text" value="http://apple.com/"><button id="go" type="button">Go</button></form>
-<iframe id="iframe" class="desktop" src="http://apple.com/"></iframe>
+<iframe id="iframe" class="desktop clear" src="http://apple.com/"></iframe>
+
 <script>
 function go() {
 	document.getElementById('iframe').src = document.getElementById('url').value;
