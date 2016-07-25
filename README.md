@@ -24,10 +24,10 @@ This tool was built by [Kim Slawson](http://slawson.org/) with the help of Stack
  * First MVP release. Bugs abound. Hopefully the #TODO list will shrink as the changelog grows :)
  
 ##TODO:
+ * **Bypass Content Security Policy directives to allow navigating to sites like twitter and facebook and youtube**
+ * **Look at iframe height (site dependant)**
  * Fix padding beside iframe in some situations
- * Look at iframe height (site dependant)
  * Match zoom to device viewport (right now the widths are hard-coded to 1280 for the embedded iframe and 320 for the device)
- * Bypass Content Security Policy directives to allow navigating to sites like twitter and facebook and youtube
  * The design could use some spit and polish
  * meta, favicon, attribution, and all that.
  * The logic could use some validation
