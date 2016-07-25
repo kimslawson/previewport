@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viewport test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+body {
+	margin: 0;
+}
+h1 {
+	margin: 0px;
+	text-align: center;
+}
+h1 + p {
+	font-style: italic;
+	margin: 0px;
+	text-align: center;
+}
+iframe {
+	outline: 1px solid black;
+
+    transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+
+	transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left;
+
+}
+iframe.desktop {
+    width: 1280px;
+    height: 800px;
+    overflow-y: hidden;
+}
+input {
+	width: 15em;
+	margin: 0px;
+	font-size: 16px; /* prevent zoom on focus with keyboard on iOS */
+}
+button {
+	font-size: 16px;
+}
+input, button {
+	float: left;
+}
+	</style>
+</head>
+<body>
+<h1>Previewport</h1>
+<p>It&rsquo;s like having a little desktop in your pocket.</p>
+<form action=""><input id="url" name="url" type="text" value="http://apple.com/"><button id="go" type="button">Go</button></form>
+<iframe id="iframe" class="desktop" src="http://apple.com/"></iframe>
+<script>
+function go() {
+	document.getElementById('iframe').src = document.getElementById('url').value;
+}
+var goButton = document.getElementById("go");
+goButton.onClick="go()";
+var url = document.getElementById("url");
+url.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        go(e);
+		e.preventDefault();
+    }
+});
+</script>
+</body>
+</html>
