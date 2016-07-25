@@ -13,7 +13,11 @@ It's like having a little desktop in your pocket
  * Any (view)port in a storm
  * Yo dawg I heard you like viewports so I put a viewport inside your viewport so you can beat this meme to death.
  
-###TODO:
+##Changelog:
+###Pre-alpha:
+ * First MVP release. Bugs abound. Hopefully the #TODO list will shrink as the changelog grows :)
+ 
+##TODO:
  * Fix padding beside iframe in some situations
  * Look at iframe height (site dependant)
  * Match zoom to device viewport (right now the widths are hard-coded to 1280 for the embedded iframe and 320 for the device)
