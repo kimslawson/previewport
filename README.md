@@ -14,9 +14,13 @@ It's like having a little desktop in your pocket
 ###Unused taglines:
  * Any (view)port in a storm
  * Yo dawg I heard you like viewports so I put a viewport inside your viewport so you can beat this meme to death.
- 
+
+## Whodunit?
+This tool was built by [Kim Slawson](http://slawson.org/) with the help of Stack Overflow and coffee. Kim can be reached [@OxC0FFEE](http://twitter.com/OxC0FFEE) on twitter.
+
+
 ##Changelog:
-###Pre-alpha:
+###2016-07-25 Pre-alpha:
  * First MVP release. Bugs abound. Hopefully the #TODO list will shrink as the changelog grows :)
  
 ##TODO:
@@ -25,6 +29,7 @@ It's like having a little desktop in your pocket
  * Match zoom to device viewport (right now the widths are hard-coded to 1280 for the embedded iframe and 320 for the device)
  * Bypass Content Security Policy directives to allow navigating to sites like twitter and facebook and youtube
  * The design could use some spit and polish
+ * meta, favicon, attribution, and all that.
  * The logic could use some validation
  * Test on browsers besides Chrome and Mobile Safari
  * Test on devices besides iPhone 5S (you can help if you have a different device!)
