@@ -3,6 +3,8 @@ Have you ever wanted to see what a site looks like on a big wide desktop display
 
 Put a URL in the text field and hit enter or click "Go" to render it into the iframe below. It's like the site on a desktop browser, only <sup>1</sup>&frasl;<sub>16</sub> the size.
 
+[Demo here](http://rawgit.com/kimslawson/previewport/master/index.html)
+
 ## Why? Doesn't "Request Desktop Site" do this?
 Sometimes "Request Desktop Site" just doesn't work. When it does work, sometimes the desktop site is responsive, so it looks just the same as the mobile site does when it's viewed on mobile.
 
