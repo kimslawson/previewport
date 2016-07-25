@@ -15,7 +15,9 @@ It's like having a little desktop in your pocket
  
 ###TODO:
  * Fix padding beside iframe in some situations
+ * Look at iframe height (site dependant)
  * Match zoom to device viewport (right now the widths are hard-coded to 1280 for the embedded iframe and 320 for the device)
+ * Bypass Content Security Policy directives to allow navigating to sites like twitter and facebook and youtube
  * The design could use some spit and polish
  * The logic could use some validation
  * Test on browsers besides Chrome and Mobile Safari
